@@ -1278,3 +1278,126 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .box-shadow-full,
+body.dark-mode .card-blog,
+body.dark-mode .service-box,
+body.dark-mode .counter-box {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .title-box-2 h5.title-left {
+  color: #ffffff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background: transparent;
+  border: none;
+  color: #0078ff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(180deg);
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #0078ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Interactive Skills */
+.skill-mf .progress {
+  transition: all 0.3s ease;
+}
+
+.skill-mf .progress:hover {
+  transform: scale(1.02);
+}
+
+.skill-mf .progress-bar {
+  transition: width 1s ease-in-out;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Particle Background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Download Button Styles */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #814048;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(129, 64, 72, 0.3);
+  border: 2px solid #814048;
+}
+
+.download-btn i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.download-btn:hover {
+  background-color: transparent;
+  color: #814048;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(129, 64, 72, 0.2);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(129, 64, 72, 0.2);
+}

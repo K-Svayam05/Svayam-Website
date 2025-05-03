@@ -30,7 +30,7 @@
 </head>
 
 <body id="page-top">
-
+  <div id="particles-js"></div>
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -103,8 +103,9 @@
                       <p><span class="title-s">Profile: </span> <span>CSE STUDENT (Batch 2026)</span></p>
                       <p><span class="title-s">Email: </span> <span>svayamkapadia.work@gmail.com</span></p>
                       <p><span class="title-s">Phone: </span> <span>+91 8320094646</span></p>
-                      <a href="https://drive.google.com/uc?export=download&id=1zAj3wFIDfhPg_ip1DQJp16qeN0RGm0QI">
-                        <button class="download-btn">Download Resume</button>
+                      <a href="https://drive.google.com/uc?export=download&id=1PoXc3_-V7dxd5MyhLAAnOHFdC8ApfyoI" class="download-btn">
+                        <i class="ion-ios-download-outline"></i>
+                        Download Resume
                       </a>
                     </div>
                   </div>
@@ -171,7 +172,7 @@
               Projects
             </h3>
             <p class="subtitle-a">
-              <i>"Building cool stuff that works smarter, so you don’t have to work harder!"</i>
+              <i>"Building cool stuff that works smarter, so you don't have to work harder!"</i>
             </p>
             <div class="line-mf"></div>
           </div>
@@ -186,7 +187,7 @@
             <div class="service-content">
               <h2 class="s-title"><a href="https://github.com/K-Svayam05/Medicine-Prescriber">Medicine Prescriber</a></h2>
               <p class="s-description text-center">
-                This is a Java-based GUI which uses JavaFX, Java Servlets and MySQL to prescribe medicines based on patients’ selected conditions.
+                This is a Java-based GUI which uses JavaFX, Java Servlets and MySQL to prescribe medicines based on patients' selected conditions.
               </p>
             </div>
           </div>
@@ -607,7 +608,7 @@
               </div>
               <h3 class="card-title"><a href="https://drive.google.com/file/d/1QuLFh2s7fucTwC0gP0Xl2v8tgRt2nHM-/view?usp=sharing">Extern - National Research Group</a></h3>
               <p class="card-description">
-                At Extern with National Research Group, I identified and profiled key industry influencers, synthesizing research findings to assess their impact on NRG’s operational sectors, providing valuable market insights.
+                At Extern with National Research Group, I identified and profiled key industry influencers, synthesizing research findings to assess their impact on NRG's operational sectors, providing valuable market insights.
               </p>
             </div>
             
@@ -737,11 +738,62 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
+  <script>
+    // Initialize particles.js
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#0078ff" },
+        shape: { type: "circle" },
+        opacity: {
+          value: 0.3,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#0078ff",
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: true, rotateX: 600, rotateY: 1200 }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 0.3 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
 </html>

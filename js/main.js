@@ -114,4 +114,49 @@
 		}
 	});
 
+	// Dark/Light Mode Toggle
+	const themeToggle = document.createElement('button');
+	themeToggle.className = 'theme-toggle';
+	themeToggle.innerHTML = '<i class="ion-ios-moon"></i>';
+	document.body.appendChild(themeToggle);
+
+	themeToggle.addEventListener('click', () => {
+		document.body.classList.toggle('dark-mode');
+		const icon = themeToggle.querySelector('i');
+		icon.classList.toggle('ion-ios-moon');
+		icon.classList.toggle('ion-ios-sunny');
+	});
+
+	// Smooth Scroll Animation
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
+	// Interactive Skills Visualization
+	const skills = document.querySelectorAll('.skill-mf .progress');
+	skills.forEach(skill => {
+		const percentage = skill.querySelector('.progress-bar').style.width;
+		skill.addEventListener('mouseover', () => {
+			skill.querySelector('.progress-bar').style.transition = 'width 1s ease-in-out';
+			skill.querySelector('.progress-bar').style.width = percentage;
+		});
+	});
+
+	// Floating Action Button
+	const fab = document.createElement('div');
+	fab.className = 'fab';
+	fab.innerHTML = '<i class="ion-ios-chatbubble"></i>';
+	document.body.appendChild(fab);
+
+	fab.addEventListener('click', () => {
+		document.querySelector('#contact').scrollIntoView({
+			behavior: 'smooth'
+		});
+	});
+
 })(jQuery);
